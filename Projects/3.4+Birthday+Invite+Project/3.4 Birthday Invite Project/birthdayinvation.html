@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .invitation {
+            font-family: Arial, sans-serif;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+            transition: background-color 2s;
+        }
+        .invitation:hover {
+            background-color: #ffc0cb; /* Change the color to pink when mouse hovers over the invitation */
+        }
+        .invitation img {
+            width: 100%;
+            max-width: 300px;
+            animation: spin 5s infinite; /* Make the image spin */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="invitation">
+    <img src="https://example.com/path-to-your-image.jpg" alt="Birthday Image">
+    <h2>You're Invited!</h2>
+    <p>Please join us to celebrate</p>
+    <h1>John's 10th Birthday!</h1>
+    <p>On Saturday, July 15th at 2:00 PM</p>
+    <p>At our home: 123 Main St, Anytown</p>
+    <p>RSVP by July 1st</p>
+    <p>Contact us at (123) 456-7890 or <a href="mailto:email@example.com">email@example.com</a></p>
+    <img src="https://example.com/path-to-your-gif.gif" alt="Animated Image">
+</div>
+
+</body>
+</html>
