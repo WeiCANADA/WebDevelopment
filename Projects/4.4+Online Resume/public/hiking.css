@@ -1,0 +1,9 @@
+img{height: 200px;}
+video{
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+  }
