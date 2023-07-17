@@ -1,1 +1,14 @@
 /* Write your code here: */
+/* Grouping Slectors using  , */
+h1, h2{color: blueviolet;}
+/* Child only one level*/
+/*div > p{color:  firebrick;}*/
+.box > p{color: firebrick;}
+/* Descendent Apply to a descentent of left side*/
+.box li{color: blue;}
+/* Chaining = Apply where ALL seletor are true
+NO SPACES between Slectors */
+/* .box li.done{color: seagreen;} */
+li.done{color: seagreen;}
+/* ul p.done{font-size: 0.5rem;} */
+ul>p.done{font-size: 0.5rem;}
