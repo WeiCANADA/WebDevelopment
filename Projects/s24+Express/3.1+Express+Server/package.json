@@ -1,0 +1,15 @@
+{
+  "name": "learning-express",
+  "version": "1.0.0",
+  "description": "import express module",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David WanLieu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

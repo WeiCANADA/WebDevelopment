@@ -1,0 +1,15 @@
+{
+  "name": "requst-ex",
+  "version": "1.0.0",
+  "description": "http requist exercise",
+  "main": "req.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Wanlieu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
