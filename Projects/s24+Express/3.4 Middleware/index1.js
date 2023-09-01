@@ -8,12 +8,16 @@ const app = express();
 const port = 3000;
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }))
+//app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
-app.post("/submit", (req, res) => {
+
+// create application/x-www-form-urlencoded parser
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
+
+app.post("/submit", urlencodedParser, (req, res) => {
   console.log(req.body);
   res.send("Successfully posted data to server");
 })

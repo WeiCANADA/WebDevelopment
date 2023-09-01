@@ -23,9 +23,14 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
-app.post("/submit", (req, res) => {
+/* app.post("/submit", (req, res) => {
+  res.send(`<h1>Your band name is:</h1><h2>${bandName}✌️</h2>`);
+}); */
+
+pp.post("/submit", (req, res) => {
   res.send(`<h1>Your band name is:</h1><h2>${bandName}✌️</h2>`);
 });
+
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
