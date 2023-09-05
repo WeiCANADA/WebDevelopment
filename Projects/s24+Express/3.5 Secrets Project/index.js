@@ -18,9 +18,9 @@ app.get("/", (req, res) => {
 });
 
 // create application/x-www-form-urlencoded parser
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
+var urlencodedParser = bodyParser.urlencoded({ extended: true })
 
-app.post("/check", urlencodedParser, (req, res) => {
+app.post("/submit", urlencodedParser, (req, res) => {
   console.log(req.body);    // your JSON
   if (checkPassword(req.body["password"])) {
 
